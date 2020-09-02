@@ -19,7 +19,7 @@ for(let i = 0; i<nav.children.length; i++) {
 class Navbar {
     static closeNavbar() {
         nav.style.transition = "300ms"
-        nav.style.transform = "translateX(-100%)"
+        nav.style.transform = "translateX(-150%)"
         navIndicator.style.transform = "rotate(0deg)"
 
         open = false
