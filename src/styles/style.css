@@ -1,0 +1,249 @@
+@import "./_prefix.module.css";
+
+header {
+    height: 100vh !important;
+    background-color: #000;
+}
+
+header h1 {
+    font-size: 25rem;
+    font-weight: bolder;
+    color: #FC427B;
+    position: absolute;
+    opacity: 0.1;
+}
+
+header h2 {
+    z-index: 1;
+    font-size: 5rem;
+}
+
+main {
+    max-width: 100vw !important;
+    overflow-x: hidden;
+    padding: 0 !important;
+}
+
+.heading{
+    height: 80vh;
+    background-color: #FC427B;
+    width: 100vw;
+    padding-left: 15%;
+    padding-top: 15%;
+}
+
+.heading h2 {
+    font-size: 3.8rem;
+    width: 80%;
+}
+
+.wave {
+    width: 50%;
+    height: 200px;
+    margin-top: -5px;
+
+    background-color: #FC427B;
+    border-bottom-left-radius: 70%;
+}
+
+.wave::before {
+    content: '';
+    position: absolute;
+    left: 30%;
+    width: 60%;
+    height: 260px;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    background-color: #FC427B;
+}
+
+.wave::after {
+    content: '';
+    position: absolute;
+    left: 70%;
+    width: 30%;
+    height: 260px;
+    border-bottom-left-radius: 70%;
+    background-color: #FC427B;
+}
+
+.progetti {
+    height: auto;
+}
+
+.progetti_body {
+    width: 80%;
+    height: auto;
+}
+
+.progetti_card {
+    width: 28%;
+    height: 200px;
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+
+.progetti_card_body {
+    background-color: red;
+    transition: 400ms all ease;
+    transform: translateY(100%)
+}
+
+.progetti_card:hover > .progetti_card_body {
+    transform: translateY(0%);
+}
+
+.about {
+    height: auto;
+}
+
+.about_body {
+    width: 80%;
+    margin-top: 6% !important;
+}
+
+.about_body_profilo_card {
+    background-color: rgb(40, 42, 44);
+    min-width: 30%;
+    border-radius: 5px;
+}
+
+.about_body_profilo_card h5 {
+    font-size: 1rem;
+}
+
+.about_body_profilo_card > h5 > span{
+    font-weight: lighter;
+}
+
+.about_body_testo {
+    width: 40%;
+
+}
+
+.about_body_testo p {
+    font-size: 1.2rem;
+}
+
+.skills {
+    background-color: #FC427B;
+    height: auto;
+}
+
+.skills_body {
+    width: 80%;
+    height: auto;
+    margin-top: 3%;
+}
+
+.skills_body > h6 {
+    height: 40px;
+    font-size: 0.9rem;
+    cursor: default;
+    user-select: none;
+    transition: 200ms all ease;
+    box-sizing: border-box;
+}
+
+.skills_body > h6:hover {
+    border-right: 4px solid dodgerblue;
+}
+
+.contatti {
+    background-color: rgb(232, 232, 232);
+    height: auto;
+}
+
+.contatti > form {
+    width: 30%;
+    text-transform: uppercase;
+}
+
+.contatti form label {
+    font-weight: normal;
+    font-size: 0.9rem !important;
+}
+
+.contatti textarea, .contatti input {
+    border-radius: 0;
+    background-color: rgb(210, 210, 210);
+}
+
+.contatti > form input {
+    height: 50px;
+}
+
+.contatti > form input:focus, .contatti > form textarea:focus {
+    background-color: rgb(210, 210, 210);
+    outline: none;
+}
+
+.contatti form button {
+    background-color: #FC427B !important;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 14rem;
+    }
+
+    header h2 {
+        font-size: 2.6rem;
+    }
+
+    .heading {
+        height: auto;
+        padding-bottom: 10%;
+        padding-left: 10%;
+    }
+
+    .heading h2 {
+        font-size: 3rem;
+        /* height: auto; */
+    }
+
+    .wave {
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .wave::after, .wave::before {
+        display: none;
+    }
+
+    .progetti_body {
+        width: 90%;
+    }
+
+    .progetti_card {
+        height: 180px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .about_body {
+        width: 100%;
+    }
+
+    .about_body_profilo_card {
+        min-width: 80% !important;
+    }
+
+    .about_body_testo {
+        width: 100%;
+        padding-top: 5% ;
+    }
+
+    .about_body_testo p {
+        margin-left: -10% !important;
+        min-width: 80% !important;
+        margin-right: 5%;
+    }
+
+    .contatti form {
+        width: 85%;
+    }
+}
