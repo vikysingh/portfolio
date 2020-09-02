@@ -11,12 +11,37 @@
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </head>
 <body class="m-0 p-0" >
+
+    <div id="nav-indicator"></div>
+
+    <nav id="nav" class="text-center">
+        <ul class="nav flex-column h-100 justify-content-center" id="nav-items" >
+
+            <li class="nav-item">
+                <a href="#home" class="nav-link text-dark font-weight-bolder my-4">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#progetti" class="nav-link text-dark font-weight-bolder my-4">Progetti</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#about" class="nav-link text-dark font-weight-bolder my-4">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#contatti" class="nav-link text-dark font-weight-bolder my-4">Contatti</a>
+            </li>
+
+        </ul>
+    </nav>
+
     <header class="container-fluid d-flex justify-content-center align-items-center" >
         <h1> VS </h1>
         <h2 class="text-white" > Vikram Singh </h2>
     </header>
 
-    <main class="container-fluid " >
+    <main class="container-fluid " id="home" >
         <section class="heading">
             <h2 class="text-white" > Sono uno sviluppatore FrontEnd in 
                 cerca di nuovi e fantastici progetti </h2>
@@ -24,7 +49,7 @@
 
         <div class="wave mb-5" ></div>
 
-        <section class="progetti text-center py-5">
+        <section class="progetti text-center py-5" id="progetti">
             <h2 class="text-danger section-title" > Alcuni progetti </h2>
             <div class="progetti_body mx-auto mt-5 d-flex flex-row justify-content-start flex-wrap">
                 <div class="progetti_card m-lg-3 m-md-2 m-xs-4">
@@ -45,9 +70,9 @@
             </div>
         </section>
 
-        <section class="about bg-dark text-center py-5">
+        <section class="about bg-dark text-center py-5" id="about">
 
-            <h2 class="text-white section-title">Su di me</h2>
+            <h2 class="text-white section-title">About</h2>
 
             <div class="about_body d-flex justify-content-around align-items-center flex-wrap mx-auto">
 
@@ -71,7 +96,7 @@
             </div>
         </section>
 
-        <section class="skills text-center py-3 pb-5">
+        <section class="skills text-center py-3 pb-5" id="competenze">
             <h2 class="text-white section-title"> Competenze </h2>
             <div class="skills_body mx-auto d-flex justify-content-start align-items-flex-start flex-wrap">
                 <h6 class="py-3 px-4 m-2 bg-white d-flex justify-content-center align-items-center" >HTML5</h6>
@@ -99,7 +124,7 @@
             </div>
         </section>
 
-        <section class="contatti text-center py-4">
+        <section class="contatti text-center py-5" id="contatti">
             <h2 class="section-title text-dark">Contattami</h2>
             <form name="contatti" data-netlify="true" action="/" method="POST" class="mx-auto mt-5 text-left">
 
@@ -124,8 +149,21 @@
         </section>
     </main>
 
+    <footer class="w-100 py-5 d-flex justify-content-center align-items-center bg-dark" >
+        <a href="#home" class="mx-2 font-weight-bolder">Home</a>
+
+        <a href="#progetti" class="mx-2 font-weight-bolder">Progetti</a>
+
+        <a href="#about" class="mx-2 font-weight-bolder">About</a>
+        
+        <a href="#contatti" class="mx-2 font-weight-bolder">Contatti</a>
+    </footer>
+
+    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"  crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="./src/js/index.js" type="module" ></script>
 </body>
 </html>

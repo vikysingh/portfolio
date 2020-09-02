@@ -1,5 +1,63 @@
 @import "./_prefix.module.css";
 
+#nav {
+    width: 50%;
+    position: fixed;
+    height: 100vh;
+    z-index: 3;
+    background-color: red;
+    transform: translateX(-100%);
+}
+
+#nav ul {
+    background-color: #eee;
+}
+
+#nav li a {
+    font-size: 3rem;
+}
+
+#nav-indicator {
+    height: 5px;
+    width: 40px;
+    background-color: turquoise;
+
+    margin-top: 35px;
+    margin-left: 35px; 
+
+    cursor: pointer;
+    z-index: 4;
+    position: fixed;
+
+    transition: 300ms all ease;
+}
+
+#nav-indicator::before, #nav-indicator::after {
+    content: '';
+    position: fixed;
+    height: 3px;
+    width: 30px;
+    background-color: turquoise;
+    cursor: pointer;
+    transition: 200ms all ease;
+}
+
+#nav-indicator::before {
+    margin-top: -8px;
+}
+
+#nav-indicator::after {
+    margin-top: 10px;
+}
+
+#nav-indicator:hover::before {
+    transform: translateY(5px);
+}
+
+#nav-indicator:hover::after {
+    transform: translateY(-5px);
+}
+
 header {
     height: 100vh !important;
     background-color: #000;
@@ -131,7 +189,7 @@ main {
 }
 
 .skills_body {
-    width: 80%;
+    width: 60%;
     height: auto;
     margin-top: 3%;
 }
@@ -185,7 +243,20 @@ main {
     font-size: 1rem;
 }
 
+footer a {
+    color: #eee;
+}
+
+footer a:hover {
+    color: #eee;
+    text-decoration: none;
+}
+
 @media (max-width: 600px) {
+    #nav {
+        width: 80%;
+    }
+
     header h1 {
         font-size: 14rem;
     }
