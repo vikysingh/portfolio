@@ -6,7 +6,7 @@
     height: 100vh;
     z-index: 3;
     background-color: red;
-    transform: translateX(-100%);
+    transform: translateX(-150%);
 }
 
 #nav ul {
