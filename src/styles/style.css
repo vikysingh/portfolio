@@ -5,7 +5,6 @@
     position: fixed;
     height: 100vh;
     z-index: 3;
-    background-color: red;
     transform: translateX(-150%);
 }
 
@@ -20,7 +19,7 @@
 #nav-indicator {
     height: 5px;
     width: 40px;
-    background-color: turquoise;
+    background-color: #FC427B;
 
     margin-top: 35px;
     margin-left: 35px; 
@@ -37,7 +36,7 @@
     position: fixed;
     height: 3px;
     width: 30px;
-    background-color: turquoise;
+    background-color: #FC427B;
     cursor: pointer;
     transition: 200ms all ease;
 }
@@ -66,7 +65,7 @@ header {
 header h1 {
     font-size: 25rem;
     font-weight: bolder;
-    color: #FC427B;
+    color: #55E6C1;
     position: absolute;
     opacity: 0.1;
 }
@@ -84,7 +83,7 @@ main {
 
 .heading{
     height: 80vh;
-    background-color: #FC427B;
+    background-color: #55E6C1;
     width: 100vw;
     padding-left: 15%;
     padding-top: 15%;
@@ -100,7 +99,7 @@ main {
     height: 200px;
     margin-top: -5px;
 
-    background-color: #FC427B;
+    background-color: #55E6C1;
     border-bottom-left-radius: 70%;
 }
 
@@ -112,7 +111,7 @@ main {
     height: 260px;
     border-bottom-left-radius: 70%;
     border-bottom-right-radius: 70%;
-    background-color: #FC427B;
+    background-color: #55E6C1;
 }
 
 .wave::after {
@@ -122,7 +121,7 @@ main {
     width: 30%;
     height: 260px;
     border-bottom-left-radius: 70%;
-    background-color: #FC427B;
+    background-color: #55E6C1;
 }
 
 .progetti {
@@ -142,9 +141,14 @@ main {
 }
 
 .progetti_card_body {
-    background-color: red;
+    background-color: #25CCF7;
     transition: 400ms all ease;
     transform: translateY(100%)
+}
+
+.progetti_card_body svg {
+    width: 2em;
+    height: 2em;
 }
 
 .progetti_card:hover > .progetti_card_body {
@@ -166,12 +170,9 @@ main {
     border-radius: 5px;
 }
 
-.about_body_profilo_card h5 {
-    font-size: 1rem;
-}
-
-.about_body_profilo_card > h5 > span{
-    font-weight: lighter;
+.about_body_profilo_card img {
+    width: 200px;
+    height: 200px;
 }
 
 .about_body_testo {
@@ -184,7 +185,7 @@ main {
 }
 
 .skills {
-    background-color: #FC427B;
+    background-color: #55E6C1;
     height: auto;
 }
 
@@ -237,7 +238,7 @@ main {
 }
 
 .contatti form button {
-    background-color: #FC427B !important;
+    background-color: #55E6C1 !important;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1rem;
