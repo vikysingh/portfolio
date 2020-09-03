@@ -132,10 +132,6 @@
         <section class="contatti text-center py-5" id="contatti">
             <h2 class="section-title text-dark">Contattami</h2>
 
-            <div class="py-5 px-4">
-                <div data-netlify-recaptcha="true"></div>
-            </div>
-
             <form name="contatti" data-netlify="true" action="/" 
             data-netlify-recaptcha="true"
             method="POST" class="mx-auto mt-5 text-left">
@@ -154,6 +150,8 @@
                     <label for="msg">Messaggio:</label>
                     <textarea name="msg" id="msg" class="form-control" required placeholder="Vostro messaggio" ></textarea>
                 </div>
+
+                <div data-netlify-recaptcha="true"></div>
 
                 <button type="submit" class="btn w-100 text-white py-3 mt-4" > Invia </button>
 
