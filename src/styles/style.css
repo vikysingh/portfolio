@@ -167,13 +167,15 @@ main {
 
 .about_body_profilo_card {
     background-color: rgb(40, 42, 44);
-    min-width: 30%;
+    min-width: 40%;
     border-radius: 5px;
 }
 
 .about_body_profilo_card img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    border: 10px solid #55E6C1;
+    border-radius: 50%;
 }
 
 .about_body_testo {
