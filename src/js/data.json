@@ -1,0 +1,12 @@
+{
+    "skills": [
+        "HTML5", "CSS3", "JavaScript - ES6+", "Bootstrap",
+        "Sass", "NPM", "Webpack", "Babel", "Reactjs", 
+        "React Chartjs", "Ant deisgn", "Axios", "Redux (React-Redux)",
+        "Git", "GitHub", "Facebook API", "TMdb API", "VSCODE",
+        "Atom", "Sublime Text", "Figma"
+    ],
+    "classes": [ 
+        "bg-white", "py-3", "px-4", "m-2", "d-flex", "justify-content-center", "align-items-center"
+     ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Mio portfolio",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikysingh/portfolio.git"
+  },
+  "author": "Vikram Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikysingh/portfolio/issues"
+  },
+  "homepage": "https://github.com/vikysingh/portfolio#readme",
+  "devDependencies": {
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.1.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.0.0"
+  }
+}
