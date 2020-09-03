@@ -113,9 +113,12 @@
 
                 <div class="about_body_testo m-auto pl-5 pl-sm-0 pl-xs-0">
                     <p class="text-white ml-5 ml-sm-0 ml-xs-0 text-justify">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, aliquam unde praesentium, 
-                        ipsam quidem obcaecati consectetur fugiat voluptatibus e
-                        aque rerum ratione enim ipsum error dolores veritatis, deleniti aliquid animi sunt.
+                        Ho iniziato ad imparare sviluppo FrontEnd il settembre 2019 ed
+                        ho fatto notevole progresso fino ad adesso.
+                        Sono in grado di sviluppare UI complessi da scratch e portarli fino allo
+                        sviluppo completo e testabili. Mi piaci lavorare in team e sui progetti con 
+                        design attraenti e di specifico con ReactJS. Oltre al FrontEnd mi piace 
+                        costruire giochi con JavaScript e dipingere.
                     </p>
                 </div>
                 
@@ -132,7 +135,8 @@
         <section class="contatti text-center py-5" id="contatti">
             <h2 class="section-title text-dark">Contattami</h2>
 
-            <form name="contatti" data-netlify="true" action="/"
+            <form name="contatti" data-netlify="true" action="/" 
+            data-netlify-recaptcha="true"
             method="POST" class="mx-auto mt-5 text-left">
 
                 <div class="form-group">
@@ -149,6 +153,8 @@
                     <label for="msg">Messaggio:</label>
                     <textarea name="msg" id="msg" class="form-control" required placeholder="Vostro messaggio" ></textarea>
                 </div>
+
+                <div data-netlify-recaptcha="true"></div>
 
                 <button type="submit" class="btn w-100 text-white py-3 mt-4" > Invia </button>
 
