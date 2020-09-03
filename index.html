@@ -131,7 +131,14 @@
 
         <section class="contatti text-center py-5" id="contatti">
             <h2 class="section-title text-dark">Contattami</h2>
-            <form name="contatti" data-netlify="true" action="/" method="POST" class="mx-auto mt-5 text-left">
+
+            <div class="py-5 px-4">
+                <div data-netlify-recaptcha="true"></div>
+            </div>
+
+            <form name="contatti" data-netlify="true" action="/" 
+            data-netlify-recaptcha="true"
+            method="POST" class="mx-auto mt-5 text-left">
 
                 <div class="form-group">
                     <label for="nome">Nome:</label>
