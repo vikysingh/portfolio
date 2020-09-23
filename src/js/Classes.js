@@ -47,7 +47,6 @@ export class MapSkills {
 
     mapSkill() {
         let skill
-        console.log("runned")
 
         this.skills.map(skl => {
             skill = document.createElement("h6")

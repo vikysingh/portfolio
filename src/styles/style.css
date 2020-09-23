@@ -56,13 +56,13 @@ body {
     margin-top: 10px;
 }
 
-#nav-indicator:hover::before {
+/* #nav-indicator:hover::before {
     transform: translateY(5px);
-}
+} */
 
-#nav-indicator:hover::after {
+/* #nav-indicator:hover::after {
     transform: translateY(-5px);
-}
+} */
 
 #social-icons-bar {
     height: 50px;
