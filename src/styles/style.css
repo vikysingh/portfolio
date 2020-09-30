@@ -183,7 +183,7 @@ main {
 }
 
 .progetti_card_body {
-    background-color: #25CCF7;
+    background-color: #55E6C1;
     transition: 400ms all ease;
     transform: translateY(100%);
     z-index: 20;
